@@ -1,0 +1,154 @@
+.footer {
+  background-color: #604cc3;
+  color: white;
+  padding: 70px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-logo img {
+  height: auto;
+  width: 12em;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  color: #ccc;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.footer-links-column ul {
+  list-style: none;
+}
+
+.footer-links-column li {
+  margin-bottom: 10px;
+}
+
+.footer-links-column a {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-links-column a:hover {
+  color: var(--primary);
+}
+
+.footer-newsletter h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.footer-newsletter p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form .btn {
+  border-radius: 0 5px 5px 0;
+  padding: 10px 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  color: #999;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-links-column {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form .btn {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

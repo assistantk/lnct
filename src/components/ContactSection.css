@@ -1,0 +1,199 @@
+.contact-section {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+
+.contact-info > p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.info-item .icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: var(--primary);
+}
+
+.info-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+.info-item p {
+  color: #666;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.contact-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-message {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.form-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.form-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.form-group.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form-group.checkbox input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-group.checkbox label {
+  margin-bottom: 0;
+}
+
+.scroll-top {
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: var(--secondary);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 50px 0;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .info-item .icon {
+    font-size: 1.3rem;
+  }
+
+  .info-item h4 {
+    font-size: 1.1rem;
+  }
+}

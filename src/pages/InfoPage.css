@@ -1,0 +1,160 @@
+.info-page {
+  /* padding-top: 80px; */
+}
+
+.info-header {
+  color: white;
+  padding: 80px 0;
+}
+
+.info-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.info-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.info-content {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.info-card {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.info-card-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.info-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-card-content {
+  flex: 2;
+  padding: 30px;
+}
+
+.info-card-content h2 {
+  font-size: 1.8rem;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.info-description {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.info-details {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.info-detail h3 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.info-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.info-tag {
+  background-color: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.back-link {
+  margin: 30px 0 70px;
+}
+
+.back-link a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--secondary);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link svg {
+  margin-right: 8px;
+}
+
+.back-link a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 992px) {
+  .info-card {
+    flex-direction: column;
+  }
+
+  .info-card-image {
+    min-width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-header {
+    padding: 60px 0;
+  }
+
+  .info-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .info-content {
+    padding: 50px 0;
+  }
+
+  .info-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-header {
+    padding: 40px 0;
+  }
+
+  .info-header h1 {
+    font-size: 2rem;
+  }
+
+  .info-header p {
+    font-size: 1rem;
+  }
+
+  .info-card-content {
+    padding: 20px;
+  }
+
+  .info-card-content h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,148 @@
+.about-section {
+  padding: 60px 20px;
+  background-color: #f9f9ff;
+ 
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #6639da;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #ff6f3c;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Leader Slider */
+.leader-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+/* Box wrapping the full content */
+.slide-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Image */
+.leader-image img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Text info */
+.leader-info {
+  flex: 1;
+  text-align: left;
+}
+
+.leader-info h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ff6f3c;
+}
+
+.leader-info h4 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4b4b5c;
+  margin-bottom: 20px;
+  background: #f6f7fa;
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 5px;
+  border-left: 3px solid #6639da;
+  border-right: 3px solid #ff6f3c;
+}
+
+.leader-message {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+  font-style: italic;
+  position: relative;
+  padding-left: 24px;
+}
+
+.leader-message::before {
+  content: "❝";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  font-size: 2rem;
+  color: #ccc;
+}
+
+/* Carousel dots */
+.slider-dots {
+  margin-top: 24px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #6639da;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .slide-content {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .leader-image img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .leader-info {
+    text-align: center;
+  }
+
+  .leader-info h4 {
+    margin-left: 0;
+  }
+
+  .leader-message {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+}
